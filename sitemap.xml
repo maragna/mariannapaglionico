@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="link del sito">
+	<url>
+		<loc><!--pagina del sito da evidenziare--></loc>
+		<lastmod>2022-05-03</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority><!--0(=minima); 1(=massima)--></priority>
+	</url>
+	<url>
+		<!--vai e scrivi la seconda pagina-->
+	</url>

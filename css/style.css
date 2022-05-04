@@ -1,0 +1,207 @@
+body {
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	margin-left: 0px!important; 
+	margin-right: 0px!important; 
+	margin-top: 0px!important; 
+	margin-bottom: 0px!important;
+	font-family: 'Montserrat', sans-serif!important;	
+	/*font-family: 'Merriweather', serif;*/
+	scroll-behavior: smooth!important;}
+
+header {
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	margin-left: 0px!important; 
+	margin-right: 0px!important; 
+	margin-top: 0px!important; 
+	margin-bottom: 0px!important;
+	background-color: #070707; 
+	margin: 0px auto; 
+	text-align: center;
+	padding-top: 6%}
+
+h1 {
+	font-family: 'Merriweather', serif!important;
+	text-align: center; 
+	margin: 0px auto;
+	color: black; 
+	text-shadow: -1px 0 #B7CADB, 0 1px #B7CADB, 1px 0 #B7CADB, 0 -1px #B7CADB;
+	white-space: nowrap; /*per non far andare a capo il titolo stringendo la pagina*/
+}
+
+.titlename {
+	font-family: 'Merriweather', serif!important; 
+	font-size: 25px!important;
+}
+
+/*per mettere h1 sopra l'immagine imgindex*/
+.container {
+	position: relative; 
+	text-align: center; 
+	color: white;
+}
+
+.titleonimage {
+	position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Merriweather', serif!important;
+  font-size: 40px;
+	text-align: center; 
+	margin: 0px auto;
+	color: black; 
+	text-shadow: -1px 0 #B7CADB, 0 1px #B7CADB, 1px 0 #B7CADB, 0 -1px #B7CADB;
+}
+
+.imgindex {
+	width: 22em; height: auto;
+}
+
+/* dalla barra di navigazione in giù*/
+main {
+	text-align: center; 
+	line-height: 1em;
+	font-size: medium;
+	padding-top: 0em!important;
+	;
+}
+
+.navigazionenav {
+	background-color: #B7CADB;
+	padding-top: 0em!important;
+	margin-top: 0em;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-top: 0px!important; 
+	/*^^SE STAI PIANGENDO, E' QUESTO CHE MANCA^^*/
+	margin-left: 0px !important;
+	padding-left: 0px;
+	border-top: 0px;
+}
+
+nav ul li {display: inline-block;
+	padding: 15px; 
+	border-top-left-radius: 10px; 
+	border-top-right-radius: 10px;
+}
+
+.whitelink { text-decoration: none!important; 
+	color: white!important;}
+
+.greylink { text-decoration: none; 
+	color: rgb(105, 105, 105);
+	/*border: 2px solid #4CAF50;*/}
+
+.greylink:hover {text-decoration: none; 
+	color: black; 
+	transition: color 0.25s ease-in-out;}
+
+	.greylinkstop {text-decoration: none; 
+	color: rgb(105, 105, 105)}
+
+.blacklink {text-decoration: none!important; 
+	color: black!important;}
+
+.bluelink { text-decoration: none; 
+	color: #91AEB7;}
+
+.titoloevidenz {color: rgb(105, 105, 105);}
+
+.imgfotopage {height: 20em; 
+	width: auto; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 25px;
+	/*filter: grayscale(50%);*/
+	opacity: 1.0;}
+
+.imgfotopage:hover {opacity: 0.8; /*filter: grayscale(0%);*/
+	transition: opacity .25s ease-in;
+	transition: opacity .25s ease-out;}
+
+.imgfotopagestop {height: 20em; 
+	width: auto; 
+	display: auto;
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 25px;
+	/*filter: grayscale(50%);*/
+	opacity: 1.0;}
+
+/*.titolini:hover {color: black;}*/
+
+.socialicon {color: black; font-size: 2em;}
+
+.active { text-decoration: none; 
+	padding: 10px; 
+	border-top-left-radius: 10px; 
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: white; 
+	color: rgb(105, 105, 105); } 
+
+
+#homeimg:hover {opacity: 1.0; transition: opacity .25s ease-in-out;}
+
+/* h1::before {content: "\f002";} */
+
+
+#homeimg {height: 20em; 
+	width: auto; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 25px;}
+
+#homeicon {font-size: 2em; color: white;}
+
+#fotoimg {height: 60em; 
+	width: auto; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;}
+
+#titleicon {font-size: 1em; color: rgb(105, 105, 105);opacity: 0.8;}
+
+
+
+
+whitelink:hover; {background-color: lightblue; color: white;}
+
+
+
+
+span.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition-duration: 0.4s;
+  cursor: pointer;}
+
+
+
+
+
+
+
+
+.morepadding {padding-left: 7em; padding-right: 7em;}
+
+
+
+
+
+
+
+
+
