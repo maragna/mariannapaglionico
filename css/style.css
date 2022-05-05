@@ -52,7 +52,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Merriweather', serif!important;
-  font-size: 40px;
+  font-size: 2em;
 	text-align: center; 
 	margin: 0px auto;
 	color: black; 
@@ -93,6 +93,7 @@ nav ul li {display: inline-block;
 	border-top-right-radius: 10px;
 }
 
+/*colored link*/
 .whitelink { text-decoration: none!important; 
 	color: white!important;}
 
@@ -113,8 +114,12 @@ nav ul li {display: inline-block;
 .bluelink { text-decoration: none; 
 	color: #91AEB7;}
 
+/*titoli*/
+.h1small {font-size: 2em;}
+
 .titoloevidenz {color: rgb(105, 105, 105);}
 
+/*img*/
 .imgfotopage {height: 20em; 
 	width: auto; 
 	display: block; 
@@ -136,6 +141,16 @@ nav ul li {display: inline-block;
 	border-radius: 25px;
 	/*filter: grayscale(50%);*/
 	opacity: 1.0;}
+
+.cardverticale
+
+.imgid {
+	height: 15em; 
+	width: auto; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
 
 /*.titolini:hover {color: black;}*/
 
@@ -171,7 +186,7 @@ nav ul li {display: inline-block;
 	margin-left: auto; 
 	margin-right: auto;}
 
-#titleicon {font-size: 1em; color: rgb(105, 105, 105);opacity: 0.8;}
+#titleicon {font-size: 1em; color: rgb(105, 105, 105);opacity: 1;}
 
 
 
@@ -195,7 +210,7 @@ span.button1 {
 
 
 
-.morepadding {padding-left: 7em; padding-right: 7em;}
+.morepadding {padding-left: 3em; padding-right: 5em;}
 
 
 
