@@ -34,6 +34,11 @@ h1 {
 	white-space: nowrap; /*per non far andare a capo il titolo stringendo la pagina*/
 }
 
+.sfondonero {
+	background-color: black;
+	margin-top: 0px!important;
+}
+
 .icononblack {
 	height: 90px;
 	width: auto;
@@ -44,6 +49,21 @@ h1 {
 .iconcontact {
 	height: 70px!important;
 	width: auto!important;
+}
+
+.iconcontatti {
+	height: 50px!important;
+	width: auto!important;
+}
+
+.iconcontattismal{
+	height: 40px!important;
+	width: auto;
+}
+
+.iconcontattibig {
+	height: 60px;
+	width: auto;
 }
 
 .titlename {
@@ -71,9 +91,6 @@ h1 {
 	text-shadow: -1px 0 #B7CADB, 0 1px #B7CADB, 1px 0 #B7CADB, 0 -1px #B7CADB;
 }
 
-.imgindex {
-	width: 22em; height: auto;
-}
 
 /* dalla barra di navigazione in giù*/
 main {
@@ -106,48 +123,71 @@ nav ul li {display: inline-block;
 }
 
 /*colored link*/
-.whitelink { text-decoration: none!important; 
-	color: white!important;}
+.whitelink {
+	text-decoration: none!important; 
+	color: white!important;
+}
 
-.greylink { text-decoration: none; 
+.greylink {
+	text-decoration: none; 
 	color: rgb(105, 105, 105);
-	/*border: 2px solid #4CAF50;*/}
+	/*border: 2px solid #4CAF50;*/
+}
 
-.greylink:hover {text-decoration: none; 
+.greylink:hover {
+	text-decoration: none; 
 	color: black; 
-	transition: color 0.25s ease-in-out;}
+	transition: color 0.25s ease-in-out;
+}
 
-	.greylinkstop {text-decoration: none; 
-	color: rgb(105, 105, 105)}
+	.greylinkstop {
+		text-decoration: none; 
+		color: rgb(105, 105, 105)
+	}
 
-.blacklink {text-decoration: none!important; 
-	color: black!important;}
+.blacklink {
+	text-decoration: none!important; 
+	color: black!important;
+}
 
-.bluelink { text-decoration: none; 
-	color: #91AEB7;}
+.bluelink {
+	text-decoration: none; 
+	color: #91AEB7;
+}
 
 .azzurrolink {
 	color: #B7CADB!important;
 }
 
 /*titoli*/
-.h1small {font-size: 2em;}
+.h1small {
+	font-size: 2em;
+}
 
-.titoloevidenz {color: rgb(105, 105, 105);}
+.titoloevidenz {
+	color: rgb(105, 105, 105);
+}
 
 /*img*/
-.imgfotopage {height: 20em; 
-	width: auto; 
+.imgfotopage {
+	max-height: 20em; 
+	max-width: auto; 
 	display: block; 
 	margin-left: auto; 
 	margin-right: auto;
 	/*border-radius: 25px;*/
 	/*filter: grayscale(50%);*/
-	opacity: 1.0;}
+	opacity: 1.0;
+}
 
-.imgfotopage:hover {opacity: 0.8; /*filter: grayscale(0%);*/
+.imgfotopage:hover {
+	opacity: 0.8; /*filter: grayscale(0%);*/
 	transition: opacity .25s ease-in;
-	transition: opacity .25s ease-out;}
+	transition: opacity .25s ease-out!important;
+	transform: scale(1.03);
+	transition: .25s ease;
+	transition: .25s ease-out!important;
+	}
 
 .imgfotopagestop {height: 20em; 
 	width: auto; 
@@ -158,7 +198,10 @@ nav ul li {display: inline-block;
 	/*filter: grayscale(50%);*/
 	opacity: 1.0;}
 
-.cardverticale
+.imgindex {
+	max-width: 22em;
+	max-height: auto;
+}
 
 .imgid {
 	height: 15em; 
