@@ -199,6 +199,14 @@ nav ul li {display: inline-block;
 	/*filter: grayscale(50%);*/
 	opacity: 1.0;}
 
+.imgindexpage {
+	max-height: 200px; 
+	max-width: auto; 
+	display: auto;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
 .imgindex {
 	max-width: 22em;
 	max-height: auto;
@@ -274,7 +282,7 @@ span.button1 {
 
 .moremorepadding {padding-left: 6em; padding-right: 10em;}
 
-
+.morepaddingindex {padding-left: 3em; padding-right: 3em;}
 
 .footer {
 	background-color: #B7CADB ;
