@@ -104,7 +104,7 @@ main {
 .navigazionenav {
 	background-color: #B7CADB;
 	padding-top: 0em!important;
-	margin-top: 0em;
+	margin-top: 0em!important;
 }
 
 nav ul {
@@ -170,7 +170,7 @@ nav ul li {display: inline-block;
 
 /*img*/
 .imgfotopage {
-	max-height: 20em; 
+	max-height: 250px; 
 	max-width: auto; 
 	display: block; 
 	margin-left: auto; 
@@ -189,8 +189,9 @@ nav ul li {display: inline-block;
 	transition: .25s ease-out!important;
 	}
 
-.imgfotopagestop {height: 20em; 
-	width: auto; 
+.imgfotopagestop {
+	max-height: 250px; 
+	max-width: auto; 
 	display: auto;
 	margin-left: auto; 
 	margin-right: auto;
@@ -271,11 +272,24 @@ span.button1 {
 
 .morepadding {padding-left: 3em; padding-right: 5em;}
 
+.moremorepadding {padding-left: 6em; padding-right: 10em;}
 
 
 
+.footer {
+	background-color: #B7CADB ;
+	position: ;
+   bottom:0;
 
+}
 
+.iconfooter {
+	height: 35px;
+	width: auto;
+}
 
-
+.iconfooterbig {
+	height: 40px;
+	width: auto;
+}
 
