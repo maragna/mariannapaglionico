@@ -197,15 +197,26 @@ nav ul li {display: inline-block;
 	margin-right: auto;
 	/*border-radius: 25px;*/
 	/*filter: grayscale(50%);*/
-	opacity: 1.0;}
+	opacity: 1.0;
+}
 
 .imgindexpage {
-	max-height: 200px; 
-	max-width: auto; 
+	max-height: auto; 
+	max-width: 300px; 
 	display: auto;
 	margin-left: auto; 
 	margin-right: auto;
+	opacity: 1.0;
 }
+
+.imgindexpage:hover {
+	opacity: 0.8; /*filter: grayscale(0%);*/
+	transition: opacity .25s ease-in;
+	transition: opacity .25s ease-out!important;
+	transform: scale(1.03);
+	transition: .25s ease;
+	transition: .25s ease-out!important;
+	}
 
 .imgindex {
 	max-width: 22em;
@@ -283,6 +294,10 @@ span.button1 {
 .moremorepadding {padding-left: 6em; padding-right: 10em;}
 
 .morepaddingindex {padding-left: 3em; padding-right: 3em;}
+
+.testocentrato {
+	text-align: center;
+}
 
 .footer {
 	background-color: #B7CADB ;
