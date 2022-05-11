@@ -92,6 +92,7 @@ h1 {
 }
 
 
+
 /* dalla barra di navigazione in giù*/
 main {
 	text-align: center; 
@@ -116,10 +117,18 @@ nav ul {
 	border-top: 0px;
 }
 
-nav ul li {display: inline-block;
+nav ul li {
+	display: inline-block;
 	padding: 15px; 
 	border-top-left-radius: 10px; 
 	border-top-right-radius: 10px;
+}
+
+/*per togliere la sottolineatura dai titoli sotto le foto nell'index*/
+section div div a {
+	text-decoration: none!important; 
+	text-align: center; 
+	text-decoration: none!important;
 }
 
 /*colored link*/
@@ -178,6 +187,8 @@ nav ul li {display: inline-block;
 	/*border-radius: 25px;*/
 	/*filter: grayscale(50%);*/
 	opacity: 1.0;
+	max-width: 100%;
+	height: auto;
 }
 
 .imgfotopage:hover {
@@ -289,9 +300,9 @@ span.button1 {
 
 
 
-.morepadding {padding-left: 3em; padding-right: 5em;}
+.morepadding {padding-left: 3em; padding-right: 3em;}
 
-.moremorepadding {padding-left: 6em; padding-right: 10em;}
+.moremorepadding {padding-left: 6em; padding-right: 6em;}
 
 .morepaddingindex {padding-left: 3em; padding-right: 3em;}
 
@@ -299,12 +310,30 @@ span.button1 {
 	text-align: center;
 }
 
+
+
+
+
+/* FOOTER */
 .footer {
 	background-color: #B7CADB ;
-	position: ;
+	position: absolute;
+	
    bottom:0;
-
+   width: 100%;
+   height: 100px;
 }
+/* per mettere il footer al bottom*/
+body {
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 100px; /* Set same as footer's height */
+}
+/*/*/
 
 .iconfooter {
 	height: 35px;
@@ -315,4 +344,39 @@ span.button1 {
 	height: 40px;
 	width: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+.fotoindex {
+	max-height: 800px!important;
+	max-width: auto;
+	border-radius: 5px;
+	max-width: 100%;
+	height: auto;
+}
+
+/*per togliere controls in video index*/
+video::-webkit-media-controls {
+  display: none;
+}
+
+video::-webkit-media-controls-play-button {}
+
+video::-webkit-media-controls-volume-slider {}
+
+video::-webkit-media-controls-mute-button {}
+
+video::-webkit-media-controls-timeline {}
+
+video::-webkit-media-controls-current-time-display {}
+
+/**/
 
