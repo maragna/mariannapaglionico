@@ -23,12 +23,14 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- per mettere il testo sull'immagine-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- JavaScript per aprire foto -->
+		<script type="text/javascript" src="js.js"></script>
 	</head>
 
 	<body class="container-fluid" >
 		<header>
 			<div class="container">
-				<a href="copyright.html"><img class="imgindex" src="images/index/index_bolo.jpeg"></a>
+				<a href="copyright.html"><img class="imgtitoloindex" src="images/index/index_bolo.jpeg"></a>
 				<a href="index.html"><h1 class="titleonimage">Marianna Paglionico</h1></a><br><br>
 			</div>
 		</header>
@@ -38,10 +40,9 @@
 					<ul>
 						<li><a class="greylink" href="video.html">VIDEO</a></li>
 						<li><a class="greylink" href="photo.html">FOTO</a></li>
-						<li class="navigazioneli"><a class="greylink" href="article.html">ARTICOLI</a></li>
+						<li><a class="greylink" href="article.html">ARTICOLI</a></li>
 						<li><a class="greylink" href="about.html">CONTATTI</a></li>
 			</section>
-
 		</main>
 
 
@@ -50,19 +51,32 @@
 <section>
 	<div class="row morepadding">
 		<div class="col-4 col-lg-4">
-			<a href="video.html"><video controls muted autoplay="autoplay" loop="true" class="fotoindex" height="500" width="auto"><source src="video__diunoa.mp4" type="video/mp4"></video><figcaption><p class="blacklink" style="padding-top: 17px;"></p></figcaption></a>
+			<video controls muted autoplay="autoplay" loop="true" class="imgvertindex" height="500" width="auto"><source src="video__diunoa.mp4" type="video/mp4"></video><figcaption><p class="blacklink" style="padding-top: 17px;"></p></figcaption>
 		</div>
 
 		<div class="col-4 col-lg-4">
-			<a href="photo.html"><img class="fotoindex" src="photo/parigi/collages_900_1350.jpg"><figcaption><p class="blacklink"><br></p></figcaption></a>
+			<img class="imgvertindex" src="photo/parigi/collages_900_1350.jpg"><figcaption><p class="blacklink"><br></p></figcaption>
 		</div>
 		
 		<div class="col-4 col-lg-4">
-			<a href="article.html"><video controls muted autoplay="autoplay" loop="true" class="fotoindex" height="500" width="auto" style=" width:560px; border: solid #B7CADB; 4px;"><source src="articleanimation.mp4" type="video/mp4"></video><figcaption><p class="blacklink"><br></p></figcaption></a>
+			<video controls muted autoplay="autoplay" loop="true" class="imgvertindex" height="500" width="auto" style=" width:560px; border: solid #B7CADB; 4px;"><source src="articleanimation.mp4" type="video/mp4"></video><figcaption><p class="blacklink"><br></p></figcaption>
 		</div>
 	</div>
 </section>
 
+<!--
+<section class="row morepadding">
+	<div class="col-4 col-lg-4" style="text-align: center;">
+		<p>cortometraggi<br>videoclip<br>video promozionali</p>
+	</div>
+	<div class="col-4 col-lg-4" style="text-align: center;">
+		<p>fotografie di viaggio<br>eventi, sport</p>
+	</div>
+	<div class="col-4 col-lg-4" style="text-align: center;">
+		<p>articoli</p>
+	</div>
+</section>
+-->
 
 		<footer class="py-4 footer">
 			<div class="container">
@@ -79,19 +93,6 @@
 		</footer>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

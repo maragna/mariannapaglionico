@@ -1,17 +1,7 @@
 body {
-	padding-top: 0px!important;
-	padding-bottom: 0px!important;
-	padding-left: 0px!important;
-	padding-right: 0px!important;
-	margin-left: 0px!important; 
-	margin-right: 0px!important; 
-	margin-top: 0px!important; 
-	margin-bottom: 0px!important;
 	font-family: 'Montserrat', sans-serif!important;	
 	/*font-family: 'Merriweather', serif;*/
-	scroll-behavior: smooth!important;}
-
-header {
+	scroll-behavior: smooth!important;	
 	padding-top: 0px!important;
 	padding-bottom: 0px!important;
 	padding-left: 0px!important;
@@ -20,10 +10,37 @@ header {
 	margin-right: 0px!important; 
 	margin-top: 0px!important; 
 	margin-bottom: 0px!important;
+}
+
+	/* per mettere i bordini bianchi a dx e sx */
+	.morepadding {
+		padding-left: 3em; 
+		padding-right: 3em;
+	}
+	/*/*/
+
+header {
 	background-color: #070707; 
 	margin: 0px auto; 
 	text-align: center;
-	padding-top: 6%}
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	margin-left: 0px!important; 
+	margin-right: 0px!important; 
+	margin-top: 0px!important; 
+	margin-bottom: 0px!important;
+}
+
+	/* posizione delle icone in header */
+	.icononblack {
+		height: 90px;
+		width: auto;
+		position: absolute;
+		top: 40px!important;
+	}
+	/*/*/
 
 h1 {
 	font-family: 'Merriweather', serif!important;
@@ -31,107 +48,159 @@ h1 {
 	margin: 0px auto;
 	color: black; 
 	text-shadow: -1px 0 #B7CADB, 0 1px #B7CADB, 1px 0 #B7CADB, 0 -1px #B7CADB;
-	white-space: nowrap; /*per non far andare a capo il titolo stringendo la pagina*/
+	/* white-space: nowrap; per non far andare a capo il titolo stringendo la pagina*/
 }
 
-.sfondonero {
-	background-color: black;
-	margin-top: 0px!important;
-}
+	/* titolo header */
+	.titlename {
+		font-family: 'Merriweather', serif!important; 
+		font-size: 25px!important;
+	}
+	/*/*/
 
-.icononblack {
-	height: 90px;
-	width: auto;
-	position: absolute;
-	top: 40px!important;
-}
+	/* titolo header pagine secondarie */
+	.h1small {
+		font-size: 2em;
+		padding-left: 3em; 
+		padding-right: 3em;		
+	}
+	/*/*/
 
-.iconcontact {
-	height: 70px!important;
-	width: auto!important;
-}
-
-.iconcontatti {
-	height: 50px!important;
-	width: auto!important;
-}
-
-.iconcontattismal{
-	height: 40px!important;
-	width: auto;
-}
-
-.iconcontattibig {
-	height: 60px;
-	width: auto;
-}
-
-.titlename {
-	font-family: 'Merriweather', serif!important; 
-	font-size: 25px!important;
-}
-
-/*per mettere h1 sopra l'immagine imgindex*/
-.container {
-	position: relative; 
-	text-align: center; 
-	color: white;
-}
-
-.titleonimage {
-	position: absolute;
-  top: 88%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Merriweather', serif!important;
-  font-size: 2em;
-	text-align: center; 
-	margin: 0px auto;
-	color: black; 
-	text-shadow: -1px 0 #B7CADB, 0 1px #B7CADB, 1px 0 #B7CADB, 0 -1px #B7CADB;
-}
-
-
-
-/* dalla barra di navigazione in giù*/
+/* tutto ciò che sta sotto l'header */
 main {
 	text-align: center; 
 	line-height: 1em;
 	font-size: medium;
 	padding-top: 0em!important;
-	;
+	}
+
+	/* barra di navigazione  */
+	.navigazionenav {
+		background-color: #B7CADB;
+		padding-top: 0em!important;
+		margin-top: 0em!important;
+	}
+
+	nav ul {
+		list-style-type: none;
+		font-size: 15px;
+		margin-top: 0px!important; 
+		/*^^SE STAI PIANGENDO, E' QUESTO CHE MANCA^^*/
+		margin-left: 0px !important;
+		padding-left: 0px;
+		border-top: 0px;}
+
+	nav ul li {
+		display: inline-block;
+		padding: 15px; 
+		border-top-left-radius: 10px; 
+		border-top-right-radius: 10px;}
+	/*/*/
+/*/*/
+
+
+
+
+/* INDEX.HTML */
+
+.imgtitoloindex {
+	max-width: 22em;
+	max-height: auto;
 }
 
-.navigazionenav {
-	background-color: #B7CADB;
-	padding-top: 0em!important;
-	margin-top: 0em!important;
+	/* per mettere h1 sopra imgindex */
+	.container {
+		position: relative; 
+		text-align: center; 
+		color: white;
+	}
+
+	.titleonimage {
+		position: absolute;
+	  top: 88%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  font-family: 'Merriweather', serif!important;
+	  font-size: 2em;
+		text-align: center; 
+		margin: 0px auto;
+		color: black; 
+		text-shadow: -1px 0 #B7CADB, 0 1px #B7CADB, 1px 0 #B7CADB, 0 -1px #B7CADB;
+	}
+	/*/*/
+
+.imgvertindex {
+	max-height: 800px!important;
+	max-width: auto;
+	border-radius: 5px;
+	max-width: 100%;
+	height: auto;
 }
 
-nav ul {
-	list-style-type: none;
-	margin-top: 0px!important; 
-	/*^^SE STAI PIANGENDO, E' QUESTO CHE MANCA^^*/
-	margin-left: 0px !important;
-	padding-left: 0px;
-	border-top: 0px;
-}
+	/*per togliere controls in video index*/
+	video::-webkit-media-controls {
+	  display: none;}
 
-nav ul li {
-	display: inline-block;
-	padding: 15px; 
-	border-top-left-radius: 10px; 
-	border-top-right-radius: 10px;
-}
+	video::-webkit-media-controls-play-button {}
 
-/*per togliere la sottolineatura dai titoli sotto le foto nell'index*/
-section div div a {
-	text-decoration: none!important; 
-	text-align: center; 
-	text-decoration: none!important;
-}
+	video::-webkit-media-controls-volume-slider {}
 
-/*colored link*/
+	video::-webkit-media-controls-mute-button {}
+
+	video::-webkit-media-controls-timeline {}
+
+	video::-webkit-media-controls-current-time-display {}
+	/**/
+/*/*/
+
+
+
+
+/* ABOUT.HTML */
+
+.imgfotopagestop {
+	max-height: 250px; 
+	max-width: auto; 
+	display: auto;
+	margin-left: auto; 
+	margin-right: auto;
+	/*border-radius: 25px;*/
+	/*filter: grayscale(50%);*/
+	opacity: 1.0;
+	max-width: 100%;
+	height: auto;
+}
+	/* icona della pagina contatti è 70px (.icononblack 90px) */
+	.iconcontact {
+		height: 70px!important;
+		width: auto!important;
+	}
+	/*/*/
+
+.iconcontatti {
+	height: 50px!important;
+	width: auto!important;
+}
+	/* icona mail è 40px (.iconcontatti 50px) */
+	.iconcontattismall{
+		height: 40px!important;
+		width: auto;
+	}
+	/*/*/
+
+	/* icona ig e map sono 60px (.iconcontatti 50px) */
+	.iconcontattibig {
+		height: 60px;
+		width: auto;
+	}
+	/*/*/
+/*/*/
+
+
+
+
+/* COLORED LINK */
+
 .whitelink {
 	text-decoration: none!important; 
 	color: white!important;
@@ -143,43 +212,28 @@ section div div a {
 	/*border: 2px solid #4CAF50;*/
 }
 
-.greylink:hover {
-	text-decoration: none; 
-	color: black; 
-	transition: color 0.25s ease-in-out;
-}
+	.greylink:hover {
+		text-decoration: none; 
+		color: black; 
+		transition: color 0.25s ease-in-out;
+	}
 
 	.greylinkstop {
 		text-decoration: none; 
-		color: rgb(105, 105, 105)
-	}
+		color: rgb(105, 105, 105)}
 
 .blacklink {
 	text-decoration: none!important; 
 	color: black!important;
 }
 
-.bluelink {
-	text-decoration: none; 
-	color: #91AEB7;
-}
 
-.azzurrolink {
-	color: #B7CADB!important;
-}
 
-/*titoli*/
-.h1small {
-	font-size: 2em;
-}
 
-.titoloevidenz {
-	color: rgb(105, 105, 105);
-}
+/* IMAGES */
 
-/*img*/
 .imgfotopage {
-	max-height: 250px; 
+	max-height: 300px; 
 	max-width: auto; 
 	display: block; 
 	margin-left: auto; 
@@ -187,8 +241,10 @@ section div div a {
 	/*border-radius: 25px;*/
 	/*filter: grayscale(50%);*/
 	opacity: 1.0;
+	/* per rendere le foto responsive alla dimensione dello schermo */
 	max-width: 100%;
 	height: auto;
+	/*/*/
 }
 
 .imgfotopage:hover {
@@ -198,142 +254,124 @@ section div div a {
 	transform: scale(1.03);
 	transition: .25s ease;
 	transition: .25s ease-out!important;
-	}
-
-.imgfotopagestop {
-	max-height: 250px; 
-	max-width: auto; 
-	display: auto;
-	margin-left: auto; 
-	margin-right: auto;
-	/*border-radius: 25px;*/
-	/*filter: grayscale(50%);*/
-	opacity: 1.0;
 }
 
-.imgindexpage {
-	max-height: auto; 
-	max-width: 300px; 
-	display: auto;
-	margin-left: auto; 
-	margin-right: auto;
-	opacity: 1.0;
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.imgindexpage:hover {
-	opacity: 0.8; /*filter: grayscale(0%);*/
-	transition: opacity .25s ease-in;
-	transition: opacity .25s ease-out!important;
-	transform: scale(1.03);
-	transition: .25s ease;
-	transition: .25s ease-out!important;
-	}
+#myImg:hover {opacity: 0.7;}
 
-.imgindex {
-	max-width: 22em;
-	max-height: auto;
+	/* Modale per aprire foto */
+			.modal {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 1; /* Sit on top */
+			  padding-top: 100px; /* Location of the box */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  overflow: auto; /* Enable scroll if needed */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			}
+
+			/* Modal Content (Image) */
+			.modal-content {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  max-width: 700px;
+			}
+
+			/* Caption of Modal Image (Image Text) - Same Width as the Image */
+			#caption {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  max-width: 700px;
+			  text-align: center;
+			  color: #ccc;
+			  padding: 10px 0;
+			  height: 150px;
+			}
+
+			/* Add Animation - Zoom in the Modal */
+			.modal-content, #caption {
+			  animation-name: zoom;
+			  animation-duration: 0.6s;
+			}
+
+			@keyframes zoom {
+			  from {transform:scale(0)}
+			  to {transform:scale(1)}
+			}
+
+			/* The Close Button */
+			.close {
+			  position: absolute;
+			  top: 15px;
+			  right: 35px;
+			  color: #f1f1f1;
+			  font-size: 40px;
+			  font-weight: bold;
+			  transition: 0.3s;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: #bbb;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+
+			/* 100% Image Width on Smaller Screens */
+			@media only screen and (max-width: 700px){
+			  .modal-content {
+			    width: 100%;
+			  }
+			}
+	/*/*/
+/*/*/
+
+
+
+
+/* VIDEO */
+
+iframe {
+	max-width: 100%;
+	max-height: 100%;
 }
-
-.imgid {
-	height: 15em; 
-	width: auto; 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto;
-}
-
-/*.titolini:hover {color: black;}*/
-
-.socialicon {color: black; font-size: 2em;}
-
-.active { text-decoration: none; 
-	padding: 10px; 
-	border-top-left-radius: 10px; 
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	background-color: white; 
-	color: rgb(105, 105, 105); } 
-
-
-#homeimg:hover {opacity: 1.0; transition: opacity .25s ease-in-out;}
-
-/* h1::before {content: "\f002";} */
-
-
-#homeimg {height: 20em; 
-	width: auto; 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto;
-	border-radius: 25px;}
-
-#homeicon {font-size: 2em; color: white;}
-
-#fotoimg {height: 60em; 
-	width: auto; 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto;}
-
-#titleicon {font-size: 1em; color: rgb(105, 105, 105);opacity: 1;}
-
-
-
-
-whitelink:hover; {background-color: lightblue; color: white;}
-
-
-
-
-span.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-  transition-duration: 0.4s;
-  cursor: pointer;}
-
-
-
-
-
-
-
-
-.morepadding {padding-left: 3em; padding-right: 3em;}
-
-.moremorepadding {padding-left: 6em; padding-right: 6em;}
-
-.morepaddingindex {padding-left: 3em; padding-right: 3em;}
-
-.testocentrato {
-	text-align: center;
-}
-
+/*/*/
 
 
 
 
 /* FOOTER */
+
 .footer {
 	background-color: #B7CADB ;
 	position: absolute;
-	
    bottom:0;
    width: 100%;
    height: 100px;
-}
-/* per mettere il footer al bottom*/
-body {
-  position: relative;
-}
+ }
 
-body::after {
-  content: '';
-  display: block;
-  height: 100px; /* Set same as footer's height */
-}
-/*/*/
+	/* per mettere il footer al bottom*/
+	body {
+	  position: relative;}
+
+	body::after {
+	  content: '';
+	  display: block;
+	  height: 100px; /* Set same as footer's height */}
+	/*/*/
+
 
 .iconfooter {
 	height: 35px;
@@ -344,6 +382,7 @@ body::after {
 	height: 40px;
 	width: auto;
 }
+/*/*/
 
 
 
@@ -354,29 +393,4 @@ body::after {
 
 
 
-
-.fotoindex {
-	max-height: 800px!important;
-	max-width: auto;
-	border-radius: 5px;
-	max-width: 100%;
-	height: auto;
-}
-
-/*per togliere controls in video index*/
-video::-webkit-media-controls {
-  display: none;
-}
-
-video::-webkit-media-controls-play-button {}
-
-video::-webkit-media-controls-volume-slider {}
-
-video::-webkit-media-controls-mute-button {}
-
-video::-webkit-media-controls-timeline {}
-
-video::-webkit-media-controls-current-time-display {}
-
-/**/
 
