@@ -1,5 +1,5 @@
 body {
-	font-family: 'Montserrat', sans-serif!important;	
+	font-family: 'Montserrat', sans-serif!important;
 	/*font-family: 'Merriweather', serif;*/
 	scroll-behavior: smooth!important;	
 	padding-top: 0px!important;
@@ -58,7 +58,7 @@ h1 {
 
 	/* titolo header */
 	.titlename {
-		font-family: 'Merriweather', serif!important; 
+		font-family: 'Merriweather', serif!important;
 		font-size: 25px!important;
 	}
 	/*/*/
@@ -234,7 +234,7 @@ main {
 }
 
 .greylink {
-	text-decoration: none; 
+	text-decoration: none!important; 
 	color: rgb(105, 105, 105);
 	/*border: 2px solid #4CAF50;*/
 }
