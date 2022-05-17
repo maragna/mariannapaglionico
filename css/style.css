@@ -17,6 +17,11 @@ body {
 		padding-left: 3em; 
 		padding-right: 3em;
 	}
+
+	.indexmorepadding {
+		padding-left: 4em; 
+		padding-right: 3em;
+	}
 	/*/*/
 
 header {
@@ -151,6 +156,28 @@ main {
 
 	video::-webkit-media-controls-current-time-display {}
 	/**/
+
+
+#iconindexarticle {
+	position: absolute;
+	height: 90px!important;
+	width: auto!important;
+	right: 10%;
+}
+
+#iconindexvideo {
+	position: absolute;
+	height: 80px!important;
+	width: auto!important;
+	left: 10%;
+}
+
+#iconindexfoto {
+	position: absolute;
+	height: 90px!important;
+	width: auto!important;
+	right: 10%;
+}
 /*/*/
 
 
@@ -233,7 +260,7 @@ main {
 /* IMAGES */
 
 .imgfotopage {
-	max-height: 300px; 
+	max-height: 250px; 
 	max-width: auto; 
 	display: block; 
 	margin-left: auto; 
