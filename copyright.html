@@ -41,14 +41,15 @@
 		<main>
 			<section class="morepadding">
 				<h2>Abstract</h2>
-				<p>Ho creato questo sito con lo scopo di tradurre il mio cv da fotografa e videomaker in un linguaggio interattivo e facilmente condivisibile e usufruibile.</p>
+				<p>Ho creato questo sito con lo scopo di tradurre il mio cv da fotografa e videomaker in un linguaggio interattivo e facilmente condivisibile e usufruibile per mostrare i miei lavori e trovare nuovi collaboratori e clienti. In aggiunta ho dato accesso agli articoli che ho scritto negli anni per blog online, relativi a cinema e serie tv.</p>
 			</section>
-			<hr><hr>
+			<hr style="border: solid; color: #B7CADB;">
 			<section class="morepadding">
-				<h2>Benchmarking</h2><br>
+				<h2>Benchmarking</h2>
+					<hr width="50%">
 					<h5><b>Obiettivo</b></h5>
 						<p>Pubblicizzare il mio curriculum per trovare nuovi clienti e collaboratori.</p>
-						<hr>
+					<hr width="50%">
 					<h5><b>Target utente</b></h5>
 						<p>Il sito è rivolto a:
 							<br>
@@ -57,12 +58,9 @@
 								<li>nuovi clienti alla ricerca di un tecnico audiovisivo.</li>
 							</ul>
 						</p>
-					  <hr>
-					<h5><b>Valore aggiuntivo del sito</b></h5>
-						<p>Oltre a foto e video ho deciso di linkare nel mio sito anche gli articoli su cinema e serie tv che ho scritto nel corso degli anni per blog online.</p>
-					<hr>
+					<hr width="50%">
 					<h5><b>Competitors</b></h5>
-						<p>Ho scelto di analizzare i siti di persone e case di produzione che conosco e con cui lavoro, tra cui:
+						<p>Ho scelto di analizzare i siti di persone e case di produzione che conosco direttamente e con cui lavoro, tra cui:
 							<br><br>
 							<a class="greylink" href="http://www.stefanodepieri.com/">stefanodepieri.com</a><br><br>
 							<a class="greylink" href="https://www.simonepelatti.it/">simonepelatti.it</a>
@@ -75,13 +73,235 @@
 							<br><br>
 							<a class="greylink" href="https://www.horizonvideo.it/">horizonvideo.it</a>
 							<br><br>
-						I primi tre siti sono relativi a singoli professionisti nel mondo dell'audiovisivo, gli ultimi tre a case di produzione (che necessariamente hanno elementi superflui per siti per singoli professionisti) tra di loro ho notato similitudini: 
+						I primi tre siti sono relativi a singoli professionisti nel mondo dell'audiovisivo, gli ultimi tre a case di produzione. In questi ultimi si ripetono elementi superflui per siti dedicati a singoli professionisti, come la storia della nascita del gruppo di lavoro e la descrizione dei membri.
+						<br>
+						Tutti e sei i siti presentano lo stesso tipo di servizio: competenze tecniche per produrre audiovisivi. Per risultare accattivanti nel mercato tutti hanno scelto di mostrare i propri lavori pregressi, tramite link youtube o vimeo quando possibile, mostrando un trailer in alcuni casi, o uno showreel in cui sono raccolte clip dai migliori lavori dell'ultimo anno.				
+						</p>
+			</section>
+			<hr style="border: solid; color: #B7CADB;">
+
+			<!-- START section STRUTTURA E LAYOUT -->
+			<section class="morepadding"> 
+				<h2>Struttura e layout</h2>
+				<hr width="50%">
+				<!-- START section ARCHITETTURA DEL SITO -->
+				<section>
+					<h5>Architettura del sito</h5>
+					<img class="imgfotopagestop" src="images/copyright/00_schema.png">
+				</section>
+				<!-- STOP section ARCHITETTURA DEL SITO -->
+				<hr width="50%">
+
+				<!-- START section WIREFRAME -->
+				<section>
+					<h5>Wireframe</h5><br>
+					<section>
+						<img class="myImg" id="myImg" class="imgcopyright" src="images/copyright/01_index.png" width="200" height="260" alt="composizione homepage">
+						<br><br>
+						<img class="myImg" id="myImg" class="imgcopyright" src="images/copyright/02_fotovideo.png" width="200" height="260" alt="composizione pagine del primo nodo (video e foto)">
+								
+						<img class="myImg" id="myImg" class="imgcopyright" src="images/copyright/05_articles.png" width="200" height="260" alt="composizione pagina articoli">
+						
+						<img class="myImg" id="myImg" class="imgcopyright" src="images/copyright/06_contacts.png" width="200" height="260" alt="composizione pagina contatti">
+						<br><br>	
+						<img class="myImg" id="myImg" class="imgcopyright" src="images/copyright/03_video.png" width="200" height="260" alt="composizione pagine dei singoli video">
+								
+						<img class="myImg" id="myImg" class="imgcopyright" src="images/copyright/04_foto.png" width="200" height="260" alt="composizione pagine delle singole gallerie di fotografie">
+
+						<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<span class="close">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"></div>
+							</div>
+
+							<script type="text/javascript">
+								// Get the modal
+								var modal = document.getElementById('myModal');
+
+								// Get the image and insert it inside the modal - use its "alt" text as a caption
+								var img = document.getElementsByClassName('myImg');
+								var modalImg = document.getElementById("img01");
+								var captionText = document.getElementById("caption");
+
+								var showModal = function(){
+								    modal.style.display = "block";
+								    modalImg.src = this.src;
+								    captionText.innerHTML = this.alt;
+								}
+
+								for (var i = 0; i < img.length; i++) {
+								    img[i].addEventListener('click', showModal);
+								}
+
+								// Get the <span> element that closes the modal
+								var span = document.getElementsByClassName("close")[0];
+
+								// When the user clicks on <span> (x), close the modal
+								span.onclick = function() { 
+								    modal.style.display = "none";
+								}
+							</script>
+
+							<style type="text/css">
+								#myImg {
+								    border-radius: 5px;
+								    cursor: pointer;
+								    transition: 0.3s;
+								}
+
+								#myImg:hover {opacity: 0.7;}
+
+								/* The Modal (background) */
+								.modal {
+								    display: none; /* Hidden by default */
+								    position: fixed; /* Stay in place */
+								    z-index: 1; /* Sit on top */
+								    padding-top: 100px; /* Location of the box */
+								    left: 0;
+								    top: 0;
+								    width: 100%; /* Full width */
+								    height: 100%; /* Full height */
+								    overflow: auto; /* Enable scroll if needed */
+								    background-color: rgb(0,0,0); /* Fallback color */
+								    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+								}
+
+								/* Modal Content (image) */
+								.modal-content {
+								    margin: auto;
+								    display: block;
+								    width: 80%;
+								    max-width: 700px;
+								}
+
+								/* Caption of Modal Image */
+								#caption {
+								    margin: auto;
+								    display: block;
+								    width: 80%;
+								    max-width: 700px;
+								    text-align: center;
+								    color: #ccc;
+								    padding: 10px 0;
+								    height: 150px;
+								}
+
+								/* Add Animation */
+								.modal-content, #caption {    
+								    -webkit-animation-name: zoom;
+								    -webkit-animation-duration: 0.6s;
+								    animation-name: zoom;
+								    animation-duration: 0.6s;
+								}
+
+								@-webkit-keyframes zoom {
+								    from {-webkit-transform:scale(0)} 
+								    to {-webkit-transform:scale(1)}
+								}
+
+								@keyframes zoom {
+								    from {transform:scale(0)} 
+								    to {transform:scale(1)}
+								}
+
+								/* The Close Button */
+								.close {
+								    position: absolute;
+								    top: 15px;
+								    right: 35px;
+								    color: #f1f1f1;
+								    font-size: 40px;
+								    font-weight: bold;
+								    transition: 0.3s;
+								}
+
+								.close:hover,
+								.close:focus {
+								    color: #bbb;
+								    text-decoration: none;
+								    cursor: pointer;
+								}
+
+								/* 100% Image Width on Smaller Screens */
+								@media only screen and (max-width: 700px){
+								    .modal-content {
+								        width: 100%;
+								    }
+								}
+							</style>
+					</section>
+				</section>
+				<!-- STOP section WIREFRAME -->
+
+				<hr width="50%">
+				<!-- START section LOOK AND FEEL -->
+				<section>
+					<h5>Look and feel</h5>
+						<br>
+						<h6>FONT:</h6>
+						<p style="font-family: 'Merriweather', serif;">font serif: Merriweather</p>
+						<p style="font-family: 'Montserrat', sans-serif!important;">font sans-serif: Montserrat</p>
+						<hr width="10%">
+						<h6>PALETTE COLORI</h6>
+						<p>Ho scelto il primo colore in quanto colore dei titoli nel mio cv:
+						<br>
+						<img class="imgfotopagestop" src="images/copyright/cv.png">
+						<br><br>
+						l'azzurro mi ha poi ricordato una fotografia che ho scattato e che ho deciso di mettere in testa all'homepage:
+						<br><br>
+						<img class="imgfotopagestop" src="images/index/index_bolo.jpeg">
+						<br><br>
+						 da questa fotografia tramite il sito <a class="greylink" href="https://coolors.co/image-picker">coolors.co</a> ho estratto i colori e composto la palette:
+						 <br><br>
+						 <img class="imgfotopagestop" src="images/copyright/palette.jpg">
+						</p>
+				</section>
+				<!-- STOP section LOOK AND FEEL -->
+			</section>
+			<!-- STOP section STRUTTURA E LAYOUT -->
+
+					<hr style="border: solid; color: #B7CADB;">
+
+			<!-- START section LINGUAGGI E STRUMENTI -->
+			<section class="morepadding">
+					<h2>Linguaggi e strumenti</h2>
+					<hr width="30%">
+						<h5>Linguaggi utilizzati</h5>
+							<p>html<br>css</p>
+						<hr width="30%">
+						<h5>Strumenti utilizzati</h5>
+						<p>
+							<a class="greylink" href="https://getbootstrap.com/docs/5.1/examples/blog/">Blog Template di Bootstrap</a><br>per alcuni aspetti grafici della pagina degli articoli
+							<br><br>
+							<a class="greylink" href="https://stackoverflow.com/questions/47798971/several-modal-images-on-page">Modal Images<br></a>per aprire le foto a schermo intero
+						</p>
+						<hr width="30%">
+						<h5>Copyright</h5>
+						<p>
+							Loghi creati da <b>Caterina Faccani</b>
+							<br>
+							<img class="imgfotopagestop" src="images/copyright/loghi.jpg">
+							<br><br>
+							Foto Backstage del cortometraggio<a class="blacklink" href="video__mima.html"> <i>MiMa - Un amore oltre il tempo</i></a> scattata da <b>Lucia Fusillo</b>
+						</p>
+							<br>
+			</section>
+			<!-- STOP section LINGUAGGI E STRUMENTI -->
+
+			<section class="morepadding">
+				<h2>Communication Strategy</h2>
+				<hr width="30%">
+				<h5>Background</h5>
+					<p>I primi tre siti sono relativi a singoli professionisti nel mondo dell'audiovisivo, gli ultimi tre a case di produzione (quindi hanno elementi superflui per siti dedicati a singoli professionisti) tra di loro ho notato similitudini: 
 						<ul>
 							<li>liste di progetti lavorativi con riferimenti immediati alle foto o ai video tramite <u>link</u> a youtube o vimeo</li>
 							<br>
 							<li>stile efficace nonostante piuttosto <u>povero di spiegazioni testuali</u><br>(<a class="blacklink" href="http://www.stefanodepieri.com/">stefanodepieri.com</a>)</li>
 							<br>
 							<li>distinzione piuttosto chiara tra lavori di <u>fotografia e videomaking</u><br>(<a class="blacklink" href="https://www.simonepelatti.it/">simonepelatti.it</a>)</li>
+							<br>
+							<li>distinzione dei vari progetti in base al genere (es: cortometraggio/videoclip/promo...)</u><br>(<a class="blacklink" href="https://www.elisastefani.it/">elisastefani.it</a> - <a class="blacklink" href="http://www.stefanodepieri.com/">stefanodepieri.com</a>)</li>
 							<br>
 							<li>cura nella creazione di <u>grafiche</u> e locandine rappresentative dei progetti<br>(<a class="blacklink" href="https://www.elisastefani.it/">elisastefani.it</a>)</li>
 							<br>
@@ -92,78 +312,45 @@
 							<li>la <u>storia</u> della nascita del gruppo di lavoro o <u>biografia</u> dei singoli collaboratori<br>(<a class="blacklink" href="https://www.horizonvideo.it/">horizonvideo.it</a> - <a class="blacklink" href="https://ondafilm.com/">ondafilm.com</a>)</li>
 							<br>
 						</ul>
-						</p>
+					In alcuni di questi siti ho trovato ridondante il racconto discorsivo di ogni progetto. Esplicitare il ruolo compiuto e il prodotto finale risulta più chiaro e diretto.
+
 			</section>
-			<hr><hr>
-			<section class="morepadding">
-				<h2>Struttura e layout</h2>
-				<h5>Architettura del sito</h5>
-				<img class="imgfotopagestop" src="images/copyright/00_schema.png">
-			</section>
-			<hr>
-			<h5>Wireframe</h5><br>
-				<section class="row">
-					<section class="col-6">
-						<p>index.html</p>
-						<img class="imgfotopagestop" src="images/copyright/01_index.png">
-					</section>
-					<section class="col-6">
-						<p>video.html & photo.html</p>
-						<img class="imgfotopagestop" src="images/copyright/02_fotovideo.png">
-					</section>
-				</section>
-				<br><br><br>
-				<section class="row">
-					<section class="col-6">
-						<p>video__.html</p>
-						<img class="imgfotopagestop" src="images/copyright/03_video.png">
-					</section>
-					<section class="col-6">
-						<p>photo__.html</p>
-						<img class="imgfotopagestop" src="images/copyright/04_foto.png">
-					</section>
-				</section>
-				<br><br><br>
-				<section class="row">
-					<section class="col-6">
-						<p>articles.html</p>
-						<img class="imgfotopagestop" src="images/copyright/05_articles.png">
-					</section>
-					<section class="col-6">
-						<p>contacts.html</p>
-						<img class="imgfotopagestop" src="images/copyright/06_contacts.png">
-					</section>
-				</section>
-					<br><p class="whitelink">-</p>
-				</section>
-				<hr>
-			<h5>Look and feel</h5>
-				<br>
-				<h6>FONT:</h6>
-				<p style="font-family: 'Merriweather', serif;">font serif: Merriweather</p>
-				<p style="font-family: 'Montserrat', sans-serif!important;">font sans-serif: Montserrat</p>
-				<br>
-				<h6>PALETTE COLORI</h6>
-				<img class="imgfotopagestop" src="images/copyright/palette.jpg">
-			<hr>
-			<h5>Linguaggi e strumenti</h5>
-				<p>LINGUAGGI UTILIZZATI:
-					<br><br>
-					html
-					<br>
-					css
-				</p>
-				<br><br>
-				<p>STRUMENTI UTILIZZATI:
-					<br><br>
-					<a class="blacklink" href="https://getbootstrap.com/docs/5.1/examples/blog/">Blog Template di Bootstrap per alcuni aspetti grafici della pagina degli articoli</a>
-					<br><br>
-					<a class="blacklink" href="https://stackoverflow.com/questions/47798971/several-modal-images-on-page">Modal Images per aprire le foto a schermo intero</a>
-				</p>
-				<br><br>
-				<p>COPYRIGHT</p>
-					Loghi creati da Caterina Faccani
-					<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		</main>
 		<footer class="py-4 footer">
