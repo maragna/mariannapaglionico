@@ -14,6 +14,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+<!-- lingua -->
+		<link rel="alternate" hreflang="it">
 <!-- per mettere il testo sull'immagine-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -34,153 +36,157 @@
 		</header>
 		<main>
 
-<section>
-	<img class="myImg" id="myImg" src="photo/roma/rm-roma22-0119.jpg" alt="Apollo e Dafne, Bernini" width="300" height="200">
-				 
-	<img class="myImg" id="myImg" src="photo/roma/rm-roma22-0100.jpg" alt="Paolina Borghese, Canova" width="300" height="200">
-<br>
-	<img class="myImg" id="myImg" src="photo/roma/rm-roma22-0131.jpg" alt="Particolare di Apollo e Dafne, Bernini" width="200" height="300">
-				  
-	<img class="myImg" id="myImg" src="photo/roma/rm-roma22-0133.jpg" alt="Soffitto e lavori in corso" width="200" height="300">
+			<section class="morepadding">
+				<p>Foto all'interno di Villa Borghese, Roma<br><br>15 febbraio 2022</p>
+			</section>
 
-	<p class="whitelink" style="line-height: 0;">-</p>
+			<section>
+				<img class="myImg" id="myImg" src="photo/roma/rm-roma22-0119.jpg" alt="Apollo e Dafne, Bernini" width="300" height="200">
+							 
+				<img class="myImg" id="myImg" src="photo/roma/rm-roma22-0100.jpg" alt="Paolina Borghese, Canova" width="300" height="200">
+			<br>
+				<img class="myImg" id="myImg" src="photo/roma/rm-roma22-0131.jpg" alt="Particolare di Apollo e Dafne, Bernini" width="200" height="300">
+							  
+				<img class="myImg" id="myImg" src="photo/roma/rm-roma22-0133.jpg" alt="Soffitto e lavori in corso" width="200" height="300">
 
-	<!-- The Modal -->
-	<div id="myModal" class="modal">
-		<span class="close">&times;</span>
-		<img class="modal-content" id="img01">
-		<div id="caption"></div>
-	</div>
+				<p class="whitelink" style="line-height: 0;">-</p>
 
-	<script type="text/javascript">
-		// Get the modal
-		var modal = document.getElementById('myModal');
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
 
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementsByClassName('myImg');
-		var modalImg = document.getElementById("img01");
-		var captionText = document.getElementById("caption");
+				<script type="text/javascript">
+					// Get the modal
+					var modal = document.getElementById('myModal');
 
-		var showModal = function(){
-		    modal.style.display = "block";
-		    modalImg.src = this.src;
-		    captionText.innerHTML = this.alt;
-		}
+					// Get the image and insert it inside the modal - use its "alt" text as a caption
+					var img = document.getElementsByClassName('myImg');
+					var modalImg = document.getElementById("img01");
+					var captionText = document.getElementById("caption");
 
-		for (var i = 0; i < img.length; i++) {
-		    img[i].addEventListener('click', showModal);
-		}
+					var showModal = function(){
+					    modal.style.display = "block";
+					    modalImg.src = this.src;
+					    captionText.innerHTML = this.alt;
+					}
 
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+					for (var i = 0; i < img.length; i++) {
+					    img[i].addEventListener('click', showModal);
+					}
 
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		    modal.style.display = "none";
-		}
-	</script>
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
 
-	<style type="text/css">
-		#myImg {
-		    border-radius: 5px;
-		    cursor: pointer;
-		    transition: 0.3s;
-		}
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() { 
+					    modal.style.display = "none";
+					}
+				</script>
 
-		#myImg:hover {opacity: 0.7;}
+				<style type="text/css">
+					#myImg {
+					    border-radius: 5px;
+					    cursor: pointer;
+					    transition: 0.3s;
+					}
 
-		/* The Modal (background) */
-		.modal {
-		    display: none; /* Hidden by default */
-		    position: fixed; /* Stay in place */
-		    z-index: 1; /* Sit on top */
-		    padding-top: 100px; /* Location of the box */
-		    left: 0;
-		    top: 0;
-		    width: 100%; /* Full width */
-		    height: 100%; /* Full height */
-		    overflow: auto; /* Enable scroll if needed */
-		    background-color: rgb(0,0,0); /* Fallback color */
-		    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-		}
+					#myImg:hover {opacity: 0.7;}
 
-		/* Modal Content (image) */
-		.modal-content {
-		    margin: auto;
-		    display: block;
-		    width: 80%;
-		    max-width: 700px;
-		}
+					/* The Modal (background) */
+					.modal {
+					    display: none; /* Hidden by default */
+					    position: fixed; /* Stay in place */
+					    z-index: 1; /* Sit on top */
+					    padding-top: 100px; /* Location of the box */
+					    left: 0;
+					    top: 0;
+					    width: 100%; /* Full width */
+					    height: 100%; /* Full height */
+					    overflow: auto; /* Enable scroll if needed */
+					    background-color: rgb(0,0,0); /* Fallback color */
+					    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+					}
 
-		/* Caption of Modal Image */
-		#caption {
-		    margin: auto;
-		    display: block;
-		    width: 80%;
-		    max-width: 700px;
-		    text-align: center;
-		    color: #ccc;
-		    padding: 10px 0;
-		    height: 150px;
-		}
+					/* Modal Content (image) */
+					.modal-content {
+					    margin: auto;
+					    display: block;
+					    width: 80%;
+					    max-width: 700px;
+					}
 
-		/* Add Animation */
-		.modal-content, #caption {    
-		    -webkit-animation-name: zoom;
-		    -webkit-animation-duration: 0.6s;
-		    animation-name: zoom;
-		    animation-duration: 0.6s;
-		}
+					/* Caption of Modal Image */
+					#caption {
+					    margin: auto;
+					    display: block;
+					    width: 80%;
+					    max-width: 700px;
+					    text-align: center;
+					    color: #ccc;
+					    padding: 10px 0;
+					    height: 150px;
+					}
 
-		@-webkit-keyframes zoom {
-		    from {-webkit-transform:scale(0)} 
-		    to {-webkit-transform:scale(1)}
-		}
+					/* Add Animation */
+					.modal-content, #caption {    
+					    -webkit-animation-name: zoom;
+					    -webkit-animation-duration: 0.6s;
+					    animation-name: zoom;
+					    animation-duration: 0.6s;
+					}
 
-		@keyframes zoom {
-		    from {transform:scale(0)} 
-		    to {transform:scale(1)}
-		}
+					@-webkit-keyframes zoom {
+					    from {-webkit-transform:scale(0)} 
+					    to {-webkit-transform:scale(1)}
+					}
 
-		/* The Close Button */
-		.close {
-		    position: absolute;
-		    top: 15px;
-		    right: 35px;
-		    color: #f1f1f1;
-		    font-size: 40px;
-		    font-weight: bold;
-		    transition: 0.3s;
-		}
+					@keyframes zoom {
+					    from {transform:scale(0)} 
+					    to {transform:scale(1)}
+					}
 
-		.close:hover,
-		.close:focus {
-		    color: #bbb;
-		    text-decoration: none;
-		    cursor: pointer;
-		}
+					/* The Close Button */
+					.close {
+					    position: absolute;
+					    top: 15px;
+					    right: 35px;
+					    color: #f1f1f1;
+					    font-size: 40px;
+					    font-weight: bold;
+					    transition: 0.3s;
+					}
 
-		/* 100% Image Width on Smaller Screens */
-		@media only screen and (max-width: 700px){
-		    .modal-content {
-		        width: 100%;
-		    }
-		}
-	</style>
-</section>	
+					.close:hover,
+					.close:focus {
+					    color: #bbb;
+					    text-decoration: none;
+					    cursor: pointer;
+					}
+
+					/* 100% Image Width on Smaller Screens */
+					@media only screen and (max-width: 700px){
+					    .modal-content {
+					        width: 100%;
+					    }
+					}
+				</style>
+			</section>	
 
 		</main>
-		<footer class="py-4 footer"><br>
+		<footer class="py-4 footer">
 			<div class="container">
 			<!--mail-->    
 				<a class="blacklink" href="mailto:marianna.paglionico@gmail.com">marianna.paglionico@gmail.com</a>
 				<br>
-			<!-- cell -->
-				<a class="blacklink" href="tel:+39 3926578743"> +39 3926578743</a>
+			<!-- cell 
+				<a class="blacklink" href="tel:+39 3926578743"> +39 3926578743</a> -->
 			<!-- social -->
 				<a href="https://www.instagram.com/la.merilu.brucata/"><img class="iconfooterbig" src="images/icon/icon_socialblackinsta.png"></a>
 				<a href="https://it-it.facebook.com/marianna.paglionico"><img class="iconfooter" src="images/icon/icon_socialblackfb.png"></a>
-				<a href="https://it.linkedin.com/in/marianna-paglionico-a4616b16a"><img class="iconfooter" src="images/icon/icon_socialblackli.png"></a><br>
+				<a href="https://it.linkedin.com/in/marianna-paglionico-a4616b16a"><img class="iconfooter" src="images/icon/icon_socialblackli.png"></a>
 			</div>
 		</footer>
 	</body>
