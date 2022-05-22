@@ -22,7 +22,7 @@
 <!-- font sans serif per testi -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <!-- lingua -->
 		<link rel="alternate" hreflang="it">
 <!-- icone -->
@@ -38,7 +38,7 @@
 	<body class="page-container">
 		<header>
 			<br>
-			<h1 class="h1small">Documentazione</h1>
+			<h1 class="h1small" style="text-align: center!important;">Documentazione</h1>
 			<nav>
 				<ul>
 					<li><a class="whitelink" href="index.html">HOME</a></li>
@@ -344,10 +344,139 @@
 				</p>
 				<hr width="30%">
 				<h5>Messaggio</h5>
-				<p>sito per auto-pubblicizzazione</p>
+				<p>sito di auto-promozione</p>
 				<hr width="30%">
 				<h5>Promozione</h5>
-				<p></p>
+				<p>Ho pubblicato sui miei social post e storie in cui racconto della nascita del sito e invito ad aprire il link</p>
+				<section>
+					<img class="myImg" id="myImg" class="imgcopyright" width="533" height="auto" src="images/copyright/social_ig.png" alt="post instagram">
+					<img class="myImg" id="myImg" class="imgcopyright" width="200" height="auto" src="images/copyright/social_igst.png" alt="storia instagram">
+					<img class="myImg" id="myImg" class="imgcopyright" width="295" height="auto" src="images/copyright/social_fb.png" alt="post facebook">
+
+						<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<span class="close">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"></div>
+							</div>
+
+							<script type="text/javascript">
+								// Get the modal
+								var modal = document.getElementById('myModal');
+
+								// Get the image and insert it inside the modal - use its "alt" text as a caption
+								var img = document.getElementsByClassName('myImg');
+								var modalImg = document.getElementById("img01");
+								var captionText = document.getElementById("caption");
+
+								var showModal = function(){
+								    modal.style.display = "block";
+								    modalImg.src = this.src;
+								    captionText.innerHTML = this.alt;
+								}
+
+								for (var i = 0; i < img.length; i++) {
+								    img[i].addEventListener('click', showModal);
+								}
+
+								// Get the <span> element that closes the modal
+								var span = document.getElementsByClassName("close")[0];
+
+								// When the user clicks on <span> (x), close the modal
+								span.onclick = function() { 
+								    modal.style.display = "none";
+								}
+							</script>
+
+							<style type="text/css">
+								#myImg {
+								    border-radius: 5px;
+								    cursor: pointer;
+								    transition: 0.3s;
+								}
+
+								#myImg:hover {opacity: 0.7;}
+
+								/* The Modal (background) */
+								.modal {
+								    display: none; /* Hidden by default */
+								    position: fixed; /* Stay in place */
+								    z-index: 1; /* Sit on top */
+								    padding-top: 100px; /* Location of the box */
+								    left: 0;
+								    top: 0;
+								    width: 100%; /* Full width */
+								    height: 100%; /* Full height */
+								    overflow: auto; /* Enable scroll if needed */
+								    background-color: rgb(0,0,0); /* Fallback color */
+								    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+								}
+
+								/* Modal Content (image) */
+								.modal-content {
+								    margin: auto;
+								    display: block;
+								    width: 80%;
+								    max-width: 700px;
+								}
+
+								/* Caption of Modal Image */
+								#caption {
+								    margin: auto;
+								    display: block;
+								    width: 80%;
+								    max-width: 700px;
+								    text-align: center;
+								    color: #ccc;
+								    padding: 10px 0;
+								    height: 150px;
+								}
+
+								/* Add Animation */
+								.modal-content, #caption {    
+								    -webkit-animation-name: zoom;
+								    -webkit-animation-duration: 0.6s;
+								    animation-name: zoom;
+								    animation-duration: 0.6s;
+								}
+
+								@-webkit-keyframes zoom {
+								    from {-webkit-transform:scale(0)} 
+								    to {-webkit-transform:scale(1)}
+								}
+
+								@keyframes zoom {
+								    from {transform:scale(0)} 
+								    to {transform:scale(1)}
+								}
+
+								/* The Close Button */
+								.close {
+								    position: absolute;
+								    top: 15px;
+								    right: 35px;
+								    color: #f1f1f1;
+								    font-size: 40px;
+								    font-weight: bold;
+								    transition: 0.3s;
+								}
+
+								.close:hover,
+								.close:focus {
+								    color: #bbb;
+								    text-decoration: none;
+								    cursor: pointer;
+								}
+
+								/* 100% Image Width on Smaller Screens */
+								@media only screen and (max-width: 700px){
+								    .modal-content {
+								        width: 100%;
+								    }
+								}
+							</style>
+				</section>				
+
 				<hr width="30%">
 				<h5>Valutazione dei risultati</h5>
 				<p></p>
