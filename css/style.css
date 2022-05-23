@@ -65,6 +65,7 @@ h1 {
 
 	/* titolo header pagine secondarie */
 	.h1small {
+		text-align: center!important;
 		font-size: 2em;
 		padding-left: 3em; 
 		padding-right: 3em;		
@@ -362,6 +363,11 @@ iframe {
 
 
 /* COPYRIGHT */
+
+main h6 {
+
+}
+
 .imgcopyright {
 	max-height: 250px; 
 	max-width: 313px; 
